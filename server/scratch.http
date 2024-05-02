@@ -1,0 +1,26 @@
+###
+GET http://localhost:3000/items
+
+###
+GET http://localhost:3000/items/search?q-trey
+
+###
+DELETE http://localhost:3000/items/1
+
+###
+POST http://localhost:3000/items
+Content-Type: application/json
+
+{
+    "firstName": "Moshe",
+    "lastName": "Plotkin",
+    "email": "plotkinm@newpaltz.edu"
+}
+
+###
+PATCH http://localhost:3000/items
+Content-Type: application/json
+
+{
+    "firstName": "Prof. Moshe"
+}
