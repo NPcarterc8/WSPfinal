@@ -43,7 +43,6 @@ app
     res.send('Hello New Paltz!')
   })
   .use('/api/v1/users', users)
-  .use('/api/v1/products', products)
 
 // 404
 app.use((req, res) => {
