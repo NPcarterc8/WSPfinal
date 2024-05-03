@@ -32,20 +32,23 @@ import { ref } from 'vue';
         </div>
         <div>(
             <a class="is-danger" @click.prevent="doLogout">
-                Not You?
+                logout
             </a>)
         </div>
         
     </div>
     <div class="buttons" v-else>
         <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
+        <a class="navbar-link">       
           Login
         </a>
         <div class="navbar-dropdown">
+            
           <a v-for="user in users" class="navbar-item" @click="doLogin(user)">
+
             {{ user.firstName }} {{ user.lastName }}
           </a>
+        
         </div>
        
       </div>

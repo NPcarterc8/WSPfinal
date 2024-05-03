@@ -30,7 +30,17 @@ function toggleMenu() {
       <RouterLink to="/" class="navbar-item">
         Home
       </RouterLink>
+      <RouterLink to="/act" class="navbar-item">
+        Activity
+    </RouterLink>
+    <RouterLink to="/ends" class="navbar-item">
+        Friends
+    </RouterLink>
+    <RouterLink to="/pv" class="navbar-item">
+        Profile
+    </RouterLink>
     </div>
+
     <div class="navbar-end">
       <div class="navbar-item">
         <LoginBadge />

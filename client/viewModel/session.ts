@@ -17,12 +17,12 @@ export function useLogin() {
             const x = await api<User>("users/login", user);
             if(x){
                 session.user = x.data;
-                router.push("/");
+                router.push("/pv");
             }
         },
         logout() {
             session.user = null;
-            router.push("/login");
+            router.push("/");   
         }
     };
 }
